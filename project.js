@@ -42,14 +42,6 @@ class ProjectManager {
     getProjects() {
         return [...this.projects];
     }
-
-    removeProject(index) {
-    if (index < 0 || index >= this.projects.length) {
-        throw new Error("존재하지 않는 프로젝트입니다.");
-    }
-
-    this.projects.splice(index, 1);
-    this.saveProjects();
 }
 
 // 3. ProjectRenderer: 화면 표시 관리
@@ -61,25 +53,33 @@ class ProjectRenderer {
 
     render() {
         this.list.innerHTML = "";
-
-        this.manager.getProjects().forEach(project => {
+        
+        this.manager.getProjects().forEach((project, index) => {
             const card = document.createElement("div");
             card.className = "project-card";
-
             const title = document.createElement("h3");
             title.textContent = project.title;
 
             const description = document.createElement("p");
             description.textContent = project.description;
-
+            
             const skills = document.createElement("p");
             skills.className = "skills";
             skills.textContent = "Skills: " + project.skills;
+            
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            
+            deleteButton.addEventListener("click", () => {
+                this.manager.removeProject(index);
+                this.render();
+            });
 
-            card.append(title, description, skills);
+            card.append(title, description, skills, deleteButton);
             this.list.appendChild(card);
         });
     }
+
 }
 
 // 4. 객체 생성 및 협력
