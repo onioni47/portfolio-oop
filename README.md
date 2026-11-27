@@ -43,7 +43,7 @@
 
 - Project: 프로젝트 정보 저장 및 필수 입력값 검증
 - ProjectManager: 프로젝트 추가, 삭제, 목록 관리 및 LocalStorage 저장
-- ProjectRendererL 프로젝트 목록을 카드 형태로 화면에 표시
+- ProjectRenderer: 프로젝트 목록을 카드 형태로 화면에 표시
 
 # 3. 객체지향 설계 
 
@@ -80,7 +80,7 @@
 
 ## 3-3 적용한 객체지향 개념
 
-- 클래스와 객체: Project, ProjectMangaer, ProjectRenderer 클래스를 정의하고 객체를 생성하였습니다.
+- 클래스와 객체: Project, ProjectManager, ProjectRenderer 클래스를 정의하고 객체를 생성하였습니다.
 - 책임 분리: 데이터 검증, 프로젝트 관리, 화면 표시 기능, 삭제 기능 등 각각 다른 클래스로 분리하여 수행하도록 하였습니다.
 - 객체 참조: 객체를 변수에 저장하면 변수는 객체 자체가 아니라 객체가 저장된 위치를 참조합니다.
 
