@@ -95,6 +95,89 @@ button {
     cursor: pointer;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    min-height: 420px;
+    padding: 30px 45px;
+    background: #e9e5dc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar, .hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav-label, .hero-bottom {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #777;
+}
+
+.hero-content {
+    padding: 55px 0;
+}
+
+.eyebrow {
+    color: #8275a5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: clamp(48px, 8vw, 88px);
+    letter-spacing: -4px;
+    margin-bottom: 18px;
+}
+
+.hero-content h1 span {
+    color: #9484bd;
+}
+
+.intro {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: #29272e;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #8275a5;
+    transform: translateY(-3px);
+}
+
+#projects {
+    scroll-margin-top: 30px;
+}
+
+
 button:hover {
     background: #555;
 }
