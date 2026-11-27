@@ -23,7 +23,7 @@
 
 개선 전 코드는 별도 repository로 보관하고 개선 후 코드는 별도의 저장소인 portfolio-opp에 관리하였습니다. 
 - 개선전 코드: https://github.com/onioni47/onioni47.github.io
-- 개선 후 코드:
+- 개선 후 코드: https://github.com/onioni47/portfolio-oop
 
 # 3. 객체지향 설계 
 
