@@ -47,6 +47,10 @@ class ProjectManager {
     if (index < 0 || index >= this.projects.length) {
         throw new Error("존재하지 않는 프로젝트입니다.");
     }
+        
+    this.projects.splice(index, 1);
+    this.saveProjects();
+}
 
     this.projects.splice(index, 1);
     this.saveProjects();
