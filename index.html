@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>My Projects</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <div id="project-list"></div>
+        </section>
+
+        <section>
+            <h2>Add New Project</h2>
+            <form id="project-form">
+                <input type="text" id="title" placeholder="Project Title" required>
+                <textarea id="description" placeholder="Project Description" required></textarea>
+                <input type="text" id="skills" placeholder="Skills (HTML, CSS, JS)" required>
+                <button type="submit">Add Project</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="project.js"></script>
+</body>
+</html>
+
