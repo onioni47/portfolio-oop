@@ -64,15 +64,10 @@
 - 책임 분리: 데이터 검증, 프로젝트 관리, 화면 표시 기능, 삭제 기능 등 각각 다른 클래스로 분리하여 수행하도록 하였습니다.
 - 객체 참조: 객체를 변수에 저장하면 변수는 객체 자체가 아니라 객체가 저장된 위치를 참조합니다.
 
- const project = new Project(
-    "My Portfolio",
-    "Personal portfolio website",
-    "HTML, CSS, JavaScript"
-);
+<img width="678" height="230" alt="image" src="https://github.com/user-attachments/assets/3e34d9b3-efd7-41b9-889f-129773003fff" />
 
-manager.addProject(project);
 
-여기서 project변수는 생성된 Project 객체를 참조합니다. 이 변수를 addProject()에 전달하면 해당 객체를 가리키는 참조값이 전달되어 ProjectManager의 목록에 저장됩니다. 
+생성된 Project 객체를 project 변수가 참조하며, 해당 참조값을 ProjectManager에 전달한다. ProjectManager는 전달받은 참조값을 프로젝트 목록에 저장한다. 따라서 변수와 목록의 원소는 동일한 객체를 참조합니다.
 - 객체 간 협력: ProjectRenderer가 ProjectManager의 메서드를 호출하여 프로젝트 삭제를 처리합니다.
 - 캡슐화: 관련된 데이터와 기능을 하나의 클래스로 묶어 관리하는 개념으로 Project 클래스는 프로젝트의 제목, 설명, 기술 정보와 입력값 검증 기능을 모두 모아 함께 관리합니다.
 
